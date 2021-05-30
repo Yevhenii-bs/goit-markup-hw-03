@@ -22,8 +22,8 @@
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid tomato;
 }
+
 h1,
 h2,
 h3,
@@ -63,7 +63,6 @@ p {
 }
 
 .logo-header {
-  /* margin-left: 215px; */
   padding-top: 24px;
   padding-bottom: 25px;
 
@@ -75,18 +74,20 @@ p {
   letter-spacing: 0.03em;
 }
 
+.site-nav .list {
+  margin-left: 331px;
+}
+
 .site-nav .link.current {
   color: var(--accent-color);
 }
 .main-nav {
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
-  /* background-color: red; */
 }
 
 .site-nav {
@@ -97,7 +98,7 @@ p {
   display: flex;
   margin-left: auto;
 }
-*/ .contacts-nav .link {
+.contacts-nav .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -108,6 +109,7 @@ p {
 }
 
 .header-section {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .site-nav .link {
@@ -168,13 +170,17 @@ p {
 
 /* STUDIO */
 
-/* HERO */
-.hero-section {
-  background-color: var(--footer-hero);
-  text-align: center;
+/* HERO  SECTION */
+.hero {
 }
-.hero-section .container {
-  padding: 200px 452px 280px;
+.hero-container {
+  background-color: var(--footer-hero);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 252px;
+  padding-right: 252px;
+
+  text-align: center;
 }
 
 .hero-title {
@@ -186,14 +192,11 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  width: 696px;
-  height: 120px;
-
   margin-top: 0px;
   margin-bottom: 30px;
 }
 
-.button-title {
+.hero-container .button {
   padding: 10px 32px;
   color: var(--primary-background-color);
   background-color: var(--accent-color);
@@ -205,12 +208,6 @@ p {
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-/* SECTION */
-
-.section {
-  /* outline: 1px solid tomato; */
 }
 
 .section .features-list {
@@ -242,6 +239,7 @@ p {
 }
 
 /* SECTION-TEXT */
+
 .features-list p {
   font-size: 14px;
   line-height: 1.714;
@@ -251,6 +249,7 @@ p {
 }
 
 /* SECTION-WORK */
+
 .section-work {
   color: var(--title-text-color);
   font-weight: bold;
@@ -275,40 +274,45 @@ p {
 }
 
 /* SECTION-TEAM */
-.container .color {
+
+.color {
   background-color: var(--secondary-background-color);
 }
 
 .team-list {
   display: flex;
   padding-bottom: 94px;
+  width: 270px;
+
+  text-align: center;
 }
+
 .team-list img {
   display: block;
-  width: 100%;
   height: auto;
+  width: 270px;
 }
 
-.team-member {
-  padding-top: 30px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 0px;
-  margin-bottom: 10px;
-}
-
-.member-work {
-  padding-top: 0px;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-bottom: 30px;
-}
-
-.text-holder {
-  border: 1px solid var(--gray);
+.team {
   background-color: var(--primary-background-color);
+  display: inline-block;
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
 }
-.team-list > li {
+
+.team-list .team-member {
+  padding: 30px 9px 0;
+}
+.team-list .member-work {
+  padding: 0 20px 30px;
+  margin-top: 10px;
+}
+
+.team-list p:nth-child(4) {
+  padding-bottom: 0px;
+}
+
+.team-list li {
   margin-right: 30px;
 }
 .team-list > li:nth-child(4) {
@@ -436,10 +440,6 @@ p {
 
 .footer-adress {
   display: block;
-  width: 231px;
-}
-
-.footer-adress > ul {
   width: 231px;
 }
 
