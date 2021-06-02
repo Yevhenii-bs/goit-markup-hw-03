@@ -145,8 +145,6 @@ p {
   color: var(--accent-color);
 }
 
-/* HEADER_STYLES */
-
 /* BUTTON STYLES */
 .button {
   background-color: var(--secondary-background-color);
@@ -171,8 +169,7 @@ p {
 /* STUDIO */
 
 /* HERO  SECTION */
-.hero {
-}
+
 .hero-container {
   background-color: var(--footer-hero);
   padding-top: 200px;
@@ -210,6 +207,8 @@ p {
   border-radius: 4px;
 }
 
+/* ПРЕИМУЩЕСТВА */
+
 .section .features-list {
   display: flex;
 }
@@ -238,8 +237,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* SECTION-TEXT */
-
 .features-list p {
   font-size: 14px;
   line-height: 1.714;
@@ -248,7 +245,7 @@ p {
   margin-bottom: 0px;
 }
 
-/* SECTION-WORK */
+/* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
 .section-work {
   color: var(--title-text-color);
@@ -273,9 +270,9 @@ p {
   margin-right: 0px;
 }
 
-/* SECTION-TEAM */
+/* НАША КОМАНДА */
 
-.color {
+.section-color {
   background-color: var(--secondary-background-color);
 }
 
@@ -344,8 +341,6 @@ p {
   line-height: 1.187;
   letter-spacing: 0.03em;
 }
-
-/* STUDIO */
 
 /* PORTFOLIO */
 
@@ -424,7 +419,7 @@ p {
 /* FOOTER */
 
 .footer {
-  color: var(--primary-background-color);
+  background-color: var(--footer-hero);
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -433,7 +428,6 @@ p {
 }
 
 .footer .container {
-  background-color: var(--footer-hero);
   padding-top: 60px;
   padding-bottom: 60px;
 }
